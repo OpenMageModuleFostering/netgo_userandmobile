@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Login With Mobile Number Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_UserandMobile
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+	<config>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<userandmobile translate="title" module="userandmobile">
+											<title>Username and Mobile Section</title>
+											<sort_order>0</sort_order>
+										</userandmobile>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</config>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Login With Mobile Number Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_UserandMobile
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<config>
+  <modules>
+    <Netgo_UserandMobile>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>0.1.0</version>
+    </Netgo_UserandMobile>
+  </modules>
+</config>

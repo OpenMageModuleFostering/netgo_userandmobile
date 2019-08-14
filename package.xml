@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netgo_UserandMobile</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Allows customer to login by mobile number</summary>
+    <description>This extension covers on the issue to solve if any user do not have email id or remember it. As an alternative to this, we have used Mobile number which is common now a days in use. This technological invention is found easily with every individual and  taking advantage of this, we used Mobile number as field for log in.&#xD;
+&#xD;
+Additionally, we have implemented such functionality that this extension will not effect front end files. This will not hamper any design or development in website or overwrite the files.&#xD;
+&#xD;
+To manage this user need to  give a code manually as per the instruction mentioned. We will provide the code too.</description>
+    <notes>First Preview Release</notes>
+    <authors><author><name>Vipin</name><user>Netgo</user><email>77vips@gmail.com</email></author></authors>
+    <date>2015-07-22</date>
+    <time>02:33:08</time>
+    <contents><target name="magecommunity"><dir name="Netgo"><dir name="UserandMobile"><dir name="Block"><dir name="Adminhtml"><file name="UserandMobilebackend.php" hash="2326928140c84b2abede730f45b4efd1"/></dir><file name="Index.php" hash="2dd9b40c75f9a34d3c32c2da0c9c511f"/><file name="Left.php" hash="27724da5d2012ae5e57bd64e2e0d79c6"/></dir><dir name="Helper"><file name="Data.php" hash="98f97f2a4babb0341cc427af59a36e11"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="UserandmobilebackendController.php" hash="3b7c156702bc890fea0443836a4b8a44"/></dir><dir name="Customer"><file name="AccountController.php" hash="b3dcc1301a052b15130f8066928a0a13"/></dir><file name="IndexController.php" hash="ba582b96acc3868cbf946f6b09697df3"/></dir><dir name="etc"><file name="adminhtml.xml" hash="728bfd3d158f0cb25a661c47809c39d3"/><file name="config.xml" hash="d0007c7b3f50b81adfa79585fce45883"/><file name="system.xml" hash="a4e8feda0115f6c0b46559a09537ccd7"/></dir><dir name="sql"><dir name="userandmobile_setup"><file name="install-0.1.0.php" hash="74e0a57068c6958d7dfb0147a6e3e669"/><file name="install-0.1.0.php--" hash="d8e87b6948cb22ce785df83c6abc90fd"/></dir></dir></dir></dir></target><target name="mage"><dir name="."><file name="readme.txt" hash="bb035cdd5a9a6fe53e34034d35ec6873"/></dir></target><target name="mageetc"><dir name="modules"><file name="Netgo_UserandMobile.xml" hash="ec9d2fc4c023d6d23af1db61cb5ebd9a"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

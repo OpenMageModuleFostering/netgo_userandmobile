@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Login With Mobile Number Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_UserandMobile
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<config>
+  <modules>
+    <Netgo_UserandMobile>
+      <version>0.1.0</version>
+    </Netgo_UserandMobile>
+  </modules>
+  <frontend>
+    <routers>
+      <userandmobile>
+        <use>standard</use>
+          <args>
+            <module>Netgo_UserandMobile</module>
+            <frontName>userandmobile</frontName>
+          </args>
+      </userandmobile>
+    </routers>
+		<!--<layout>
+		  <updates>
+			<userandmobile>
+			  <file>userandmobile.xml</file>
+			</userandmobile>
+		  </updates>
+		</layout>-->
+  </frontend>
+  <global>
+		<rewrite>        
+            <netgo_userandmobile_customer_accountcontroller>
+                <from><![CDATA[#^/customer/account/#]]></from> <!-- Mage_Customer_AccountController  -->
+                <to>/userandmobile/customer_account/</to> <!-- Netgo_UserandMobile_Customer_AccountController  -->
+            </netgo_userandmobile_customer_accountcontroller>
+		</rewrite>
+    <helpers>
+      <userandmobile>
+        <class>Netgo_UserandMobile_Helper</class>
+      </userandmobile>
+    </helpers>
+	<blocks>
+	  <userandmobile>
+		<class>Netgo_UserandMobile_Block</class>
+	  </userandmobile>
+	</blocks>
+	<models>
+	  <userandmobile>
+		<class>Netgo_UserandMobile_Model</class>
+		<resourceModel>userandmobile_mysql4</resourceModel>
+	  </userandmobile>
+	</models>
+	<resources>
+	  <userandmobile_setup>
+		<setup>
+		  <module>Netgo_UserandMobile</module>
+		  <class>Mage_Eav_Model_Entity_Setup</class>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </userandmobile_setup>
+	  <userandmobile_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </userandmobile_write>
+	  <userandmobile_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </userandmobile_read> 
+	</resources>
+  </global>
+  <admin>
+	<routers>
+	  <userandmobile>
+	    <use>admin</use>
+		<args>
+		  <module>Netgo_UserandMobile</module>
+		  <frontName>admin_userandmobile</frontName>
+		</args>
+	  </userandmobile>
+	</routers>
+  </admin>
+  <adminhtml>
+	<!--<menu>
+	  <userandmobile module="userandmobile">
+		<title>UserandMobile</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <userandmobilebackend module="userandmobile">
+			<title>Backend Page Title</title>
+			<sort_order>0</sort_order>
+			<action>admin_userandmobile/adminhtml_userandmobilebackend</action>
+		  </userandmobilebackend>
+		</children>
+	  </userandmobile>
+	</menu>-->
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<userandmobile translate="title" module="userandmobile">
+			  <title>UserandMobile</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <userandmobilebackend translate="title">
+			<title>Backend Page Title</title>
+		  </userandmobilebackend>
+			  </children>
+			</userandmobile>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<!--<layout>
+	  <updates>
+		<userandmobile>
+		  <file>userandmobile.xml</file>
+		</userandmobile>
+	  </updates>
+	</layout>-->
+  </adminhtml>
+</config> 
