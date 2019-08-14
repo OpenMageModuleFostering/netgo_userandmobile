@@ -4,7 +4,7 @@
 
 1) Install this extension using Magento Connect.
 
-2) Open "app/design/frontend/your theme package/default or your theme name/template/persistent/customer/form/register.phtml"
+2) Open "app/design/frontend/your_package_name/your_theme_name/template/persistent/customer/form/register.phtml"
 
 3) Put following code just after email.
 
@@ -15,12 +15,12 @@
         </div>
     	</div>
 
-4) Now open app/design/frontend/your theme package/default or your theme name/template/persistent/customer/form/login.phtml
+4) Now open app/design/frontend/your_package_name/your_theme_name/template/persistent/customer/form/login.phtml
 
 5) Comment the email html and put following code just after email html you commented.
 
 	<li>
-	<label for="mobile" class="required"><em>*</em>Mobile Number</label>
+	<label for="mobile" class="required"><em>*</em>Mobile/Email</label>
 	<div class="input-box">
 	<input type="text" name="login[username]" value="" id="mobile" class="input-text required-entry validate" title="Mobile Number">
 	</div>

@@ -19,6 +19,7 @@ $eavConfig = Mage::getSingleton('eav/config');
 $attribute = array(
     'label'        => 'mobile',
     'visible'      => true,
+	'unique'       => true,
     'required'     => false,
     'type'         => 'varchar',
     'input'        => 'text',

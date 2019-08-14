@@ -15,7 +15,7 @@
 <config>
   <modules>
     <Netgo_UserandMobile>
-      <version>0.1.0</version>
+      <version>1.0.1</version>
     </Netgo_UserandMobile>
   </modules>
   <frontend>
@@ -59,6 +59,19 @@
 		<resourceModel>userandmobile_mysql4</resourceModel>
 	  </userandmobile>
 	</models>
+	<!--added by arshad starts-->
+			<events>
+				<customer_save_before>
+					<observers>
+						<netgo_userandMobile_model_observer>
+							<type>singleton</type>
+							<class>Netgo_UserandMobile_Model_Observer</class>
+							<method>example</method>
+						</netgo_userandMobile_model_observer>
+					</observers>
+				</customer_save_before>
+			</events>
+	<!-- added by arshad ends-->
 	<resources>
 	  <userandmobile_setup>
 		<setup>
