@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Netgo_UserandMobile",
+    "name": "openmage-module-fostering\/netgo_userandmobile",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Allows customer to login by mobile number",
     "authors": [
