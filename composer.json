@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Netgo_UserandMobile",
+    "name": "OpenMageModuleFostering\/Netgo_UserandMobile",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Allows customer to login by mobile number",
     "authors": [
-    {
-        "name": "Netgo",
-        "email": "netattingomails@gmail.com"
-    }
-],
+        {
+            "name": "Netgo",
+            "email": "netattingomails@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
